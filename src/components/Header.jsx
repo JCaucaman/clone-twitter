@@ -1,16 +1,12 @@
-import { Link } from "react-router-dom";
+import { HeaderButton } from "./HeaderButton.jsx"
 
 export function Header() {
     return(
-        <div>
-            <ol>
-                <li>
-                    <Link to="/" >Incio</Link>
-                </li>
-                <li>
-                    <Link to="/perfil" >Perfil</Link>
-                </li>
-            </ol>
-        </div>
+        <nav className="flex bg-amber-600 w-1/6 md:w-1/4  h-full justify-end">
+            <ul className="bg-red-500 h-full w-fit mr-2 ml-2">
+                <HeaderButton link="/" Name="Inicio" img="home.png" />
+                <HeaderButton link="/perfil" Name="Perfil" img="user.png" />
+            </ul>
+        </nav>
     )
 }
