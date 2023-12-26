@@ -6,15 +6,12 @@ export default {
     extend: {
       maxHeight: {
         128: "32rem",
+        166: "41.5rem",
       },
       maxWidth: {
         128: "32rem",
-      },
-      height: {
-        41: "41.5rem",
-      },
-      width: {
-        37: "37.4rem",
+        160: "40rem",
+        100: "25rem"
       },
     },
   },
