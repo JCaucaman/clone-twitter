@@ -1,6 +1,6 @@
 export function NotFound() {
     return (
-        <div>
+        <div className="text-white">
             ERROR 404
         </div>
     )

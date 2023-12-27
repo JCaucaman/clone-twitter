@@ -8,7 +8,7 @@ export function PostBotton(props) {
                 {prop.img}
             </span>
             <span className={`hover:${prop.color}`}>
-                00
+                {prop.count}
             </span>
         </div>
     )

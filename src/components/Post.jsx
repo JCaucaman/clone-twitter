@@ -1,16 +1,16 @@
 import { PostBotton } from "./PostBotton";
+import { UserImg } from "./UserImg";
 
 export function Post(props) {
 
     const prop = props;
 
     return(
-        <article className="max-w-160 h-min pr-4 pl-4 flex pt-4 bg-green-900
-        max-sm:max-w-96
+        <article className="h-min pr-4 pl-4 flex pt-4 bg-green-900
         max-sm:max-h-166 
         max-sm:bg-green-100"
         >
-            <img className="w-10 h-10 rounded-full mr-3 cursor-pointer" src="/photo-user.jpg" alt="user" />
+            <UserImg img="/photo-user.jpg" />
             <div className="w-full text-base text-white bg-yellow-400">
                 <section>
                     <span className="text-white font-semibold hover:underline cursor-pointer bg-emerald-300">name-user</span>
@@ -26,12 +26,12 @@ export function Post(props) {
                 </section>
                 <div className="flex text-lg bg-pink-800 justify-between 
                 md:max-w-96 
-                lg:max-w-128 s
-                m:max-w-100"
+                lg:max-w-128 
+                sm:max-w-100"
                 >
-                    <PostBotton img="🗨️" color="text-cyan-600" />
-                    <PostBotton img="♻️" color="text-green-600" />
-                    <PostBotton img="❤️" color="text-red-600" />
+                    <PostBotton img="🗨️" count={0} color="text-cyan-600" />
+                    <PostBotton img="♻️" count={0} color="text-green-600" />
+                    <PostBotton img="❤️" count={0} color="text-red-600" />
                 </div>
             </div>
         </article>
