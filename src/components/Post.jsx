@@ -5,6 +5,19 @@ export function Post(props) {
 
     const prop = props;
 
+    var isImg = true;
+
+    if(!prop.img){
+        isImg = false;
+    }
+
+    var isText = true;
+
+    if(!prop.text){
+        isText = false;
+    }
+
+
     return(
         <article className="h-min pr-4 pl-4 flex pt-4 bg-green-900
         max-sm:max-h-166 
@@ -17,12 +30,25 @@ export function Post(props) {
                     <span className="text-zinc-500 bg-emerald-400 cursor-pointer">@user</span>
                     <span className="text-zinc-500 pl-1 pr-1 bg-emerald-200" >·</span> 
                     <span className="text-zinc-500 hover:underline bg-emerald-100 cursor-pointer">00h</span>
-                    <p className="max-w-128 pb-3 bg-indigo-600">
-                        cLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores ipsum iste consectetur amet vero! Quisquam officiis optio aut neque facere, repellendus sed, animi consequatur offi
-                    </p>
-                    <div className=" max-h-128">
-                        <img className="rounded-xl max-h-128" src={prop.img}/>
-                    </div>
+                    
+                    {
+                        isText
+                        ?   
+                            <p className="max-w-128 pb-3 bg-indigo-600">
+                                {prop.text}
+                            </p>
+                        :
+                            <></>
+                    }
+                    {
+                        isImg
+                        ?   
+                            <div className=" max-h-128">
+                                <img className="rounded-xl max-h-128" src={prop.img}/>
+                            </div>
+                        :
+                            <></>
+                    }
                 </section>
                 <div className="flex text-lg bg-pink-800 justify-between 
                 md:max-w-96 

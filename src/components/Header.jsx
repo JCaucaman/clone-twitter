@@ -7,7 +7,7 @@ export function Header() {
         >
             <ul className="bg-red-500 h-full w-fit mr-2 ml-2">
                 <HeaderButton link="/" Name="Inicio" img="home.png" />
-                <HeaderButton link="/perfil" Name="Perfil" img="user.png" />
+                <HeaderButton link="/profile" Name="Profile" img="user.png" />
             </ul>
         </nav>
     )
