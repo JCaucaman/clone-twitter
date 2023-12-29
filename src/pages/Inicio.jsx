@@ -1,10 +1,12 @@
 import { Post } from "../components/Post";
 import { FormPost } from "../components/FormPost";
+import { Feed } from "../components/Feed.jsx";
+import { Background } from "../components/Background.jsx";
 
 export function Inicio() {
   return(
-    <div className="text-2xl bg-slate-600 w-5/6 md:w-3/4 h-full overflow-y-scroll">
-      <div className="max-w-160 max-sm:max-w-96">
+    <Background>
+      <Feed>
         <FormPost />
         <Post
           img="/imagen.jpg" 
@@ -21,7 +23,7 @@ export function Inicio() {
           img="/imagen.jpg" 
           text="Lorem"
         />
-      </div>
-    </div>
+      </Feed>
+    </Background>
   )
 }
