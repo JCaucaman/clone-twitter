@@ -1,6 +1,6 @@
 export function PostsWithReplies() {
     return(
-        <div>
+        <div className=" bg-fuchsia-700">
             WithReplies
         </div>
     )

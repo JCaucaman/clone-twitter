@@ -1,5 +1,7 @@
 export function PostsWithLikes() {
-    <div>
-        PostsWithLikes
-    </div>
+    return(
+        <div className="bg-white">
+            PostsWithLikes
+        </div>
+    )
 }
