@@ -55,9 +55,9 @@ export function Post(props) {
                 lg:max-w-128 
                 sm:max-w-100"
                 >
-                    <PostBotton img="🗨️" count={0} color="text-cyan-600" />
-                    <PostBotton img="♻️" count={0} color="text-green-600" />
-                    <PostBotton img="❤️" count={0} color="text-red-600" />
+                    <PostBotton img="🗨️" count={0} state={false} color="text-cyan-600" />
+                    <PostBotton img="♻️" count={0} state={false} color="text-green-600" />
+                    <PostBotton img="❤️" count={1} state={true} color="text-red-600" />
                 </div>
             </div>
         </article>

@@ -17,11 +17,6 @@ export function Inicio() {
         />
         <Post
           img="/imagen.jpg" 
-          text="Lorem"
-        />
-        <Post
-          img="/imagen.jpg" 
-          text="Lorem"
         />
       </Feed>
     </Background>

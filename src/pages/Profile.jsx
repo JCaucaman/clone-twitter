@@ -6,14 +6,11 @@ import { Background } from "../components/Background";
 
 export function Profile() {
   return(
-    <>
-      <Background>
-        <Feed>
-          <ProfileHeader />
-        
-          <Outlet />
-        </Feed>
-      </Background>
-    </>
+    <Background>
+      <Feed>
+        <ProfileHeader />
+        <Outlet />
+      </Feed>
+    </Background>
   )
 }

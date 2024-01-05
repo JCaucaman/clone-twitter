@@ -13,7 +13,7 @@ export function FormPost() {
                         <input value="🏞️" type="button"/>
                     </div>
                     <div>
-                        <Button text="Post" />
+                        <Button text="Post"/>
                     </div>
                 </div>
             </form>
